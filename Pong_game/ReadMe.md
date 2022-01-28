@@ -5,7 +5,7 @@
 <li>"W, S for player 2</li>
 </ul>
 <hr>
-### This project is built to test and experiment with classes and inheritence
+## This project is built to test and experiment with classes and inheritence
 <hr>
 <p> it contains 4 python files</p>
 <ul>
