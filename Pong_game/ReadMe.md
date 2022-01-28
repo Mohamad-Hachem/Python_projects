@@ -1,5 +1,6 @@
 # Welcome to the Pong game
 <p> This game can be played 2 player using: </p>
+<p> First player to hit 3 points wins </p>
 <ul>
 <li>"up arrow, down array" for player 1</li>
 <li>"W, S for player 2</li>
