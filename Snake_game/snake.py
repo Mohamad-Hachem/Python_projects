@@ -3,7 +3,7 @@ from turtle import Turtle
 # creating our constants so we have more control over our game and not have to go and search in the code for changes
 STARTING_POSITIONS = [(0, 0),(-20, 0),(-40, 0)]
 MOVE_DISTANCE = 20
-UP, , left, right = 90, 270, 180, 0
+UP, DOWN, LEFT, RIGHT = 90, 270, 180, 0
 
 class Snake:
     # creating our class
@@ -21,6 +21,14 @@ class Snake:
         # positioning the snake body
         for i in range(len(self.snake_body)):
             self.snake_body[i].goto(STARTING_POSITIONS[i])
+
+    # reseting the snake positioning
+    def reset(self):
+        for part in self.snake_body:
+            part.goto(1000,1000)
+        self.snake_body.clear()
+        self.initialising()
+        self.head = self.snake_body[0]
 
     # adding a turtle to the body (making the body bigger)
     def add_turtle(self):
@@ -47,17 +55,17 @@ class Snake:
 
     # creating a series of functions of movements for our snakes up ,down ,left ,right
     def move_up(self):
-        if(self.head.heading() != down):
+        if(self.head.heading() != DOWN):
             self.head.setheading(90)
 
     def move_right(self):
-        if (self.head.heading() != left):
+        if (self.head.heading() != LEFT):
             self.head.setheading(0)
 
     def move_left(self):
-        if (self.head.heading() != right):
+        if (self.head.heading() != RIGHT):
             self.head.setheading(180)
 
     def move_down(self):
-        if (self.head.heading() != up):
+        if (self.head.heading() != UP):
             self.head.setheading(270)
