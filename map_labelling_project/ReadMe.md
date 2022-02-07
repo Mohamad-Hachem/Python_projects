@@ -1,5 +1,4 @@
 # welcome to the Map labelling Game
-<hr>
 <p> In this game you get to test your ability to know the 50 states of U.S.A</p>
 <h3><u>How does it work:</u></h3>
 <p> you get to try to test the states names and if you get it right the state will be labeled on the right location</p>
